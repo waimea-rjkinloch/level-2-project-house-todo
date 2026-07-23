@@ -2,25 +2,25 @@
 
 ## Identified Problem or Need
 
-The app I am creating is going to fix the problem of being disorginised with tasks to do around the house, Cook dinner, fix roof leak etc
+The app I am creating is going to fix the problem of being disorginised with tasks to do around the house, Cook dinner, fix roof leak etc.
 
 ## End-User Requirements
 
-My end users are my family living in my house (mostly Mum and Dad) who will evaluate my app and give quality feedback
+My end users are my family living in my house (mostly Mum and Dad) who will evaluate my app and give quality feedback based on their preferences and ideas.
 
 ## Proposed Solution
 
-I will create a system that organises the individual tasks and allows the user to create a schedule with the tasks that require compelting
+I will create a system that lets users add tasks then organises(filter or sort) the individual tasks and allows the user to create a schedule with the tasks that require compeleting
 
 # Relevant Implications
 
 ## Usability
 
-Included in this app will be simple components that are straight-forward and simple to use
+The app is simplistic and can be used effectively
 
 ### Relevance to the System
 
-The heuristic of usability is important and relevant to this app because when using an app, simple components allow for the user to use it without complications or frustration
+The heuristic of usability is important and relevant to this project because when using an app, simple components allow for the user to use it without complications or frustration
 
 ### Impact / Considerations
 
@@ -29,7 +29,7 @@ Since my app of a household to do list is a simple list of tasks with other vari
 
 ## Accesibility
 
-This app will be accesible to all users 
+The app will be accesible to ALL users
 
 ### Relevance to the System
 
@@ -46,21 +46,21 @@ The app will function successfuly in the way it was programmed or designed to.
 
 ### Relevance to the System
 
-The aspect of functionality is important for the project because each app has its unique function which is usually the reason you enter and use the app so if the apps functionality is faulty 
+The aspect of functionality is important for the project because 
 
 ### Impact / Considerations
 
-Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this implication.
+I will develop my app to fulfill its function of showing the user tasks among the household
 
 
 
-## NAME OF IMPLICATION 4
+## Aesthetical
 
-Replace this text with a clear explanation of what the implication means.
+Aesthetics means that the app will look visually appealing to users and utilise features, colours etc to appeal the app to the user.
 
 ### Relevance to the System
 
-Replace this text with an explanation of why the implication is relevant to this particular project.
+Aesthetics is relevant to this project becuase the websites need to look aestheticly pleasing to the user 
 
 ### Impact / Considerations
 
@@ -68,16 +68,15 @@ Replace this text with an explanation of what you will need to consider moving f
 
 
 
-## NAME OF IMPLICATION 5
+## End user
 
-Replace this text with a clear explanation of what the implication means.
+The apps design and purpose will be based upon the end user feedback and judgement.
 
 ### Relevance to the System
 
-Replace this text with an explanation of why the implication is relevant to this particular project.
+The end user is very relevant to the system because this project is based upon what the end user or stakeholder had a problem or issue with, so since this project is based upon the end user then their feedback/ideas determines development of this entire project
 
 ### Impact / Considerations
 
-Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this implication.
-
+My end users(My family) will give accurate feedback throughout the development of this website, which I will build this app off of, their ideas will be considered the whole way through of developing so the app will match their standard and preferences
 
