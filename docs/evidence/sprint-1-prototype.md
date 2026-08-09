@@ -1,5 +1,6 @@
 # Sprint 1 - Developing a DB and UI Prototype
-
+To do list: 
+ - 
 
 ## Sprint Goals
 
@@ -27,12 +28,18 @@ Develop a design for the database and a UI prototype that simulates the key func
 
 Replace this text with notes regarding the DB design.
 
-![DB Design](screenshots/placeholder.png)
+![DB Design](screenshots/screenshot.png)
 
 
 ### Required Data Input
 
-Replace this text with a description of what data will be input, and where / how it will be obtained.
+The user will input the following:
+- Topic of Task (Drop down meny)
+- Name of the Task (self write)
+- Details/notes of the task (self write)
+- Date to be completed by (self write)
+- Estimated time the task will take (drop down menu)
+- Urgency of the task (drop down menu)
 
 ### Required Data Output
 

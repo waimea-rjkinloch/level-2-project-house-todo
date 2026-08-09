@@ -46,25 +46,25 @@ The app will function successfuly in the way it was programmed or designed to.
 
 ### Relevance to the System
 
-The aspect of functionality is important for the project because 
+The aspect of functionality is important for the project because for the app to be quick and easy to use, all parts of it needs to function quickly and efficiently.
 
 ### Impact / Considerations
 
-I will develop my app to fulfill its function of showing the user tasks among the household
+I will develop my app to fulfill its function of showing the user tasks among the household, I will do this by testing every interactable button to ensure it functions efficiently and every link ensuring it links the user to the correct page, aswell as trying to reduce the time for the functions to be carried out.
 
 
 
 ## Aesthetical
 
-Aesthetics means that the app will look visually appealing to users and utilise features, colours etc to appeal the app to the user.
+Aesthetics means that the app will look visually appealing to users and utilise features, colours and font to appeal the app to the user.
 
 ### Relevance to the System
 
-Aesthetics is relevant to this project becuase the websites need to look aestheticly pleasing to the user 
+Aesthetics is relevant to this project becuase the websites need to look aestheticly pleasing to the user. Colors, layout and font will need to be used accurately according to feedback.
 
 ### Impact / Considerations
 
-Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this implication.
+The color variety and contrast will be decided upon feedback, aswell as font-color, font-size, layout and overall visual aspects of the website that will be polished and changed according to preferences
 
 
 
