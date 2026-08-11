@@ -1,6 +1,4 @@
 # Sprint 1 - Developing a DB and UI Prototype
-To do list: 
- - 
 
 ## Sprint Goals
 
@@ -34,21 +32,20 @@ Replace this text with notes regarding the DB design.
 ### Required Data Input
 
 The user will input the following:
-- Topic of Task (Drop down meny)
+- Topic of Task (Drop down menu)
 - Name of the Task (self write)
 - Details/notes of the task (self write)
-- Date to be completed by (self write)
+- Date/time to be completed by (self write)
 - Estimated time the task will take (drop down menu)
 - Urgency of the task (drop down menu)
 
 ### Required Data Output
 
-Replace this text with a description of the outputs for the system - what types of data will be displayed?
+Once the User has inputed their data about the task. The name, topic and urgency of that task will be displayed on the list and everything else (time to complete, date/time to be completed and details of the task) can be accessed when clicking onto the task
 
 ### Required Data Processing
 
-Replace this text with a description of how the data will be processed to achieve the desired output(s) - any processes / formulae?
-
+The urgency of the task (number between 1 and 10) will prcoess the inputed number into a color relevant to how urgent the task needs to be completed eg 10 will be a dark red, 5 will be a medium yellow and 1 will be lime green
 
 ## UI 'Flow'
 
