@@ -1,5 +1,6 @@
 # Sprint 1 - Developing a DB and UI Prototype
-
+Feedback on v1: Layout is great but maybe add more tabs or another page for more feasture to organise the tasks
+Feedback on 5 colors: She prefers the green primary and redish secondary looked the best in a website setting as they stood and and comboed together nicely
 ## Sprint Goals
 
 Develop a design for the database and a UI prototype that simulates the key functionality of the system. Test and refine the UI so that it can serve as the model for the next phase of development in Sprint 2.
