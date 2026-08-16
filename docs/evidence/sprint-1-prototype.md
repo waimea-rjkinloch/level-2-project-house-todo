@@ -27,7 +27,7 @@ Develop a design for the database and a UI prototype that simulates the key func
 
 Replace this text with notes regarding the DB design.
 
-![DB Design](screenshots/screenshot.png)
+![DB Design](screenshots/initialDBdesign.png)
 
 
 ### Required Data Input
@@ -42,7 +42,7 @@ The user will input the following:
 
 ### Required Data Output
 
-Once the User has inputed their data about the task. The name, topic and urgency of that task will be displayed on the list and everything else (time to complete, date/time to be completed and details of the task) can be accessed when clicking onto the task
+Once the User has inputed their data about the task. The name, topic and urgency of that task will be displayed on the list and everything else (time to complete, date/time to be completed and details of the task) can be accessed when clicking onto the task.
 
 ### Required Data Processing
 
@@ -55,17 +55,17 @@ The first stage of prototyping was to explore how the UI might 'flow' between st
 This Figma demo shows the initial design for the UI 'flow':
 
 **FIGMA FLOW - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT**
-
+![Ui flow v1](screenshots/ui_flow_v1.png)
 ### Testing
 
-Replace this text with notes about what you did to test the UI flow and the outcome of the testing.
+This Layout and page system functioned well but there is not enough room on the bar of a task to display all of the information
 
 ### Changes / Improvements
 
-Replace this text with notes any improvements you made as a result of the testing.
+I will create a new page of all a tasks details when you click on a specific task.
 
 *IMPROVED FIGMA FLOW - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT*
-
+![Ui Flow v2](screenshots/ui_flow_v2.png)
 
 ## Initial UI Prototype
 
@@ -74,17 +74,17 @@ The next stage of prototyping was to develop the layout for each screen of the U
 This Figma demo shows the initial layout design for the UI:
 
 *FIGMA PROTOTYPE - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT*
-
+![Ui Flow v2](screenshots/ui_flow_v2.png)
 ### Testing
 
-Replace this text with notes about what you did to test the UI flow and the outcome of the testing.
+This layout is good in general but another page or tab to schedule tasks could be handy
 
 ### Changes / Improvements
 
-Replace this text with notes any improvements you made as a result of the testing.
+I have added a drop down menu at the header with allows the user to schedule tasks simply.
 
 *FIGMA IMPROVED PROTOTYPE - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT*
-
+![Ui Flow v3](screenshots/ui_flow_v3.png)
 
 ## Refined UI Prototype
 
@@ -93,17 +93,22 @@ Having established the layout of the UI screens, the prototype was refined visua
 This Figma demo shows the UI with refinements applied:
 
 *FIGMA REFINED PROTOTYPE - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT*
-
+![Ui Flow v3](screenshots/ui_flow_v3.png)
 ### Testing
+The website needs more of a variety of color, fonts and more detail of each interactable thing but layout is good.
 
-Replace this text with notes about what you did to test the UI flow and the outcome of the testing.
-
+![Colors1](screenshots/Blue&red.png)
+![Colors2](screenshots/green&purple.png)
+![Colors3](screenshots/purple&green.png)
+![Colors4](screenshots/red&blue.png)
+![Colors5](screenshots/torquoise.png)
+From this color selection she prefers the torquoise primary and red secondary looked the best in a website setting as they stood out from eachother well and looked good in a website.
 ### Changes / Improvements
 
-Replace this text with notes any improvements you made as a result of the testing.
+I fully refined the website giving color variety, fonts and detail about everything and utilised the torquoise and red color base that was favourited
 
 *FIGMA IMPROVED REFINED PROTOTYPE - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT*
-
+![Ui Flow v4(final)](screenshots/ui_flow_v4(final).png)
 
 ## Sprint Review
 
