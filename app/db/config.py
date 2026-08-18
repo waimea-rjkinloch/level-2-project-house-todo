@@ -14,13 +14,26 @@
 #     SCHEMA    = "CREATE TABLE name (...)"
 #     SEED_DATA = "INSERT INTO name (...)" or None
 #----------------------------------------------------------------------------
+class TopicTable:
 
-class NoteTable:
-
-    NAME = "note"
+    NAME = "task"
 
     SCHEMA = """
-        CREATE TABLE note (
+        CREATE TABLE task (
+            id      INTEGER PRIMARY KEY AUTOINCREMENT,
+            title   TEXT NOT NULL,
+            body    TEXT,
+            pinned  INTEGER DEFAULT 0,
+            created TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        )
+    """
+
+class TaskTable:
+
+    NAME = "task"
+
+    SCHEMA = """
+        CREATE TABLE task (
             id      INTEGER PRIMARY KEY AUTOINCREMENT,
             title   TEXT NOT NULL,
             body    TEXT,
@@ -59,7 +72,8 @@ class NoteTable:
 #----------------------------------------------------------------------------
 
 TABLES = [
-    NoteTable,
+    TaskTable,
+    TopicTable,
     # Add more tables here...
 ]
 

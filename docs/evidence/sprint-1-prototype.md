@@ -101,7 +101,7 @@ The website needs more of a variety of color, fonts and more detail of each inte
 ![Colors2](screenshots/green&purple.png)
 ![Colors3](screenshots/purple&green.png)
 ![Colors4](screenshots/red&blue.png)
-![Colors5](screenshots/torquoise.png)
+![Colors5](screenshots/torquoise&red.png)
 From this color selection she prefers the torquoise primary and red secondary looked the best in a website setting as they stood out from eachother well and looked good in a website.
 ### Changes / Improvements
 
