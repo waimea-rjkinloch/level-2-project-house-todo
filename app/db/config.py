@@ -16,16 +16,23 @@
 #----------------------------------------------------------------------------
 class TopicTable:
 
-    NAME = "task"
+    NAME = "topic"
 
     SCHEMA = """
-        CREATE TABLE task (
+        CREATE TABLE topic (
             id      INTEGER PRIMARY KEY AUTOINCREMENT,
-            title   TEXT NOT NULL,
-            body    TEXT,
-            pinned  INTEGER DEFAULT 0,
-            created TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            name    TEXT NOT NULL,
+            members TEXT NOT NULL
         )
+    """
+
+    SEED_DATA = """
+        INSERT INTO topic (name, members)
+        VALUES
+            ("Cleaning", "Chris, Sue")
+            ("Cooking", "Robbie, Sue")
+            ("Casual", "Robbie, Sue, Jack")
+            ("Outdoors", "Jack, Chris")
     """
 
 class TaskTable:
@@ -34,22 +41,23 @@ class TaskTable:
 
     SCHEMA = """
         CREATE TABLE task (
-            id      INTEGER PRIMARY KEY AUTOINCREMENT,
-            title   TEXT NOT NULL,
-            body    TEXT,
-            pinned  INTEGER DEFAULT 0,
-            created TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            id            INTEGER PRIMARY KEY AUTOINCREMENT,
+            topic_id      INTEGER FOREIGN KEY,
+            name          TEXT NOT NULL,
+            description   TEXT,
+            est_time      TEXT NOT NULL,
+            complete_by   TEXT NOT NULL,
+            urgency       INTEGER
         )
     """
 
     SEED_DATA = """
-        INSERT INTO note (title, pinned, body)
+        INSERT INTO task (topic_id, name, description, est_time, complete_by, urgency)
         VALUES
-            ("Welcome!",      1, "This is a demo application using Flask, Jinja and SQLite."),
-            ("Shopping List", 0, "Milk\nBread\nEggs\nCheese"),
-            ("Meeting Notes", 0, "Discussed project timeline.\n\nAction items:\n- Review design\n- Update docs"),
-            ("Recipe: Pasta", 0, "Ingredients:\n- 500g pasta\n- Tomato sauce\n- Garlic\n\nCook pasta, add sauce, enjoy!"),
-            ("Important!",    1, "Remember to backup your database regularly.")
+            (1, "Vacuum lounge", "Make sure to charge after use", "10 minutes", "20th of August", 5),
+            (2, "Cook dinner", "Pick from butter chicken or steak", "Varied", "7pm 19th of August", 9),
+            (3, "Feed the cats", "Only feed Tiger a little bit", "1 minute", "7am 18th of August", 8),
+            (4, "Mow the lawn", "Empty after use", "30 minutes", "23rd of August", 6)
     """
 
 # Add more table classes here...
@@ -72,8 +80,8 @@ class TaskTable:
 #----------------------------------------------------------------------------
 
 TABLES = [
-    TaskTable,
     TopicTable,
+    TaskTable
     # Add more tables here...
 ]
 

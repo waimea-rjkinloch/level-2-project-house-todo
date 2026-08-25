@@ -1,0 +1,33 @@
+{#=====================================================
+  Base template
+  - Used as the basis of all pages
+=====================================================#}
+
+{% extends 'pages/_base.jinja' %}
+
+
+{% block content %}
+
+    <h2>List of Tasks</h2>
+
+    <section id="tasks">
+
+        {% for tasks in tasks %}
+
+            <div class="task">
+                <h3>{{ task.name }}</h3>
+                <p><strong>{{ topic.name }}</strong></p>
+                <p><strong>{{ task.urgency }}</strong></p>
+                <p><strong>{{ task.name }}</strong></p>
+                <p><a href="/creature/{{ creature.id }}/delete">Delete</a></p>
+            </div>
+
+        {% else %}
+
+            <p>No More tasks!</p>
+
+        {% endfor %}
+
+    </section>
+
+{% endblock %}

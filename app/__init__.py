@@ -21,6 +21,23 @@ app = Flask(__name__)
 #===========================================================
 
 #-----------------------------------------------------------
+# Task Page - Shows a list of all the tasks.
+#-----------------------------------------------------------
+@app.get("/Tasks")
+def show_all_tasks():
+    with connect_db() as db:
+        sql = """
+            SELECT id, name, members
+            FROM topic
+            SELECT id, topic_id, name, description, est_time, complete_by, urgency
+            FROM task
+        """
+        params = ()
+        tasks = db.execute(sql, params).fetchall()
+
+        return render_template("pages/task_list.jinja", tasks = tasks)
+
+#-----------------------------------------------------------
 # Home page - Show all notes
 #-----------------------------------------------------------
 @app.get("/")
@@ -41,7 +58,6 @@ def show_notes():
         flash("Test ERROR message", "error")
 
         return render_template("pages/note_list.jinja", notes=notes)
-
 
 #===========================================================
 # Configure the app
