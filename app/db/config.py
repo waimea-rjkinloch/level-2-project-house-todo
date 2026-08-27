@@ -42,7 +42,7 @@ class TaskTable:
     SCHEMA = """
         CREATE TABLE task (
             id            INTEGER PRIMARY KEY AUTOINCREMENT,
-            topic_id      INTEGER FOREIGN KEY,
+            topic_id      INTEGER SECONDARY KEY,
             name          TEXT NOT NULL,
             description   TEXT,
             est_time      TEXT NOT NULL,
