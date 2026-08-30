@@ -23,13 +23,13 @@ app = Flask(__name__)
 #-----------------------------------------------------------
 # Task Page - Shows a list of all the tasks.
 #-----------------------------------------------------------
-@app.get("/Tasks")
+@app.get("/tasks")
 def show_all_tasks():
     with connect_db() as db:
         sql = """
-            SELECT id, name, members
+            SELECT id, name
             FROM topic
-            SELECT id, topic_id, name, description, est_time, complete_by, urgency
+            SELECT id, topic_id, name, urgency
             FROM task
         """
         params = ()
@@ -38,26 +38,54 @@ def show_all_tasks():
         return render_template("pages/task_list.jinja", tasks = tasks)
 
 #-----------------------------------------------------------
-# Home page - Show all notes
+# Details of Task
 #-----------------------------------------------------------
-@app.get("/")
-def show_notes():
+@app.get("/task/details")
+def show_all_tasks():
     with connect_db() as db:
         sql = """
-            SELECT id, title, body, pinned, created
-            FROM note
-            ORDER BY pinned DESC, created DESC
+            SELECT id, name, members
+            FROM topic
+            SELECT id, topic_id, name, details,  urgency
+            FROM task
         """
         params = ()
-        notes = db.execute(sql, params).fetchall()
+        tasks = db.execute(sql, params).fetchall()
 
-        flash("Test message")
-        flash("Test SUCCESS message", "success")
-        flash("Test INFO message", "info")
-        flash("Test WARNING message", "warning")
-        flash("Test ERROR message", "error")
+        return render_template("pages/task_details.jinja", tasks = tasks)
+# #-----------------------------------------------------------
+# # New Task Form
+# #-----------------------------------------------------------
+# @app.get("/task/new")
+# def show_task_form():
+#     return render_template("pages/task_form.jinja")
+# #-----------------------------------------------------------
+# # Handle the task form data
+# #-----------------------------------------------------------
+# @app.post("/task/new")
+# def process_task_form():
+#     # Get the form data
+#     species = request.form.get("species", "unknown").strip()
+#     name = request.form.get("name", "unknown").strip()
 
-        return render_template("pages/note_list.jinja", notes=notes)
+#     # Connect to the db
+#     with connect_db() as db:
+
+#         sql = """
+
+#                 INSERT INTO creatures (species,name)
+#                 VALUES (?, ?)
+
+#         """
+#         params = (species, name)
+
+#         #  Run the query
+#         db.execute(sql, params)
+
+#         flash(f"Creature {name} added successfully")
+
+#         # We're done, so back to the list
+#         return redirect("/creatures")
 
 #===========================================================
 # Configure the app

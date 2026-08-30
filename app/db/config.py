@@ -29,10 +29,10 @@ class TopicTable:
     SEED_DATA = """
         INSERT INTO topic (name, members)
         VALUES
-            ("Cleaning", "Chris, Sue")
-            ("Cooking", "Robbie, Sue")
-            ("Casual", "Robbie, Sue, Jack")
-            ("Outdoors", "Jack, Chris")
+            ("Cleaning", "Chris & Sue"),
+            ("Cooking", "Robbie & Sue"),
+            ("Casual", "Robbie & Sue & Jack"),
+            ("Outdoors", "Jack & Chris")
     """
 
 class TaskTable:
@@ -42,12 +42,14 @@ class TaskTable:
     SCHEMA = """
         CREATE TABLE task (
             id            INTEGER PRIMARY KEY AUTOINCREMENT,
-            topic_id      INTEGER SECONDARY KEY,
+            topic_id      INTEGER NOT NULL,
             name          TEXT NOT NULL,
             description   TEXT,
             est_time      TEXT NOT NULL,
             complete_by   TEXT NOT NULL,
-            urgency       INTEGER
+            urgency       INTEGER,
+
+            FOREIGN KEY (topic_id) REFERENCES topic(id)
         )
     """
 
