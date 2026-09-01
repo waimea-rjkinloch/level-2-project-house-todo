@@ -23,25 +23,32 @@ app = Flask(__name__)
 #-----------------------------------------------------------
 # Task Page - Shows a list of all the tasks.
 #-----------------------------------------------------------
-@app.get("/tasks")
+@app.get("/")
 def show_all_tasks():
     with connect_db() as db:
         sql = """
-            SELECT id, name
+            SELECT 
+                topic.id    AS topic_id, 
+                topic.name  AS topic_name,
+                task.id     AS task_id, 
+                task.name   AS task_name,
+                task.urgency
+
             FROM topic
-            SELECT id, topic_id, name, urgency
-            FROM task
+            JOIN task ON task.topic_id = topic.id
+
+            ORDER BY task.urgency DESC
         """
         params = ()
         tasks = db.execute(sql, params).fetchall()
 
-        return render_template("pages/task_list.jinja", tasks = tasks)
+        return render_template("pages/task_list.jinja", task = tasks)
 
 #-----------------------------------------------------------
 # Details of Task
 #-----------------------------------------------------------
 @app.get("/task/details")
-def show_all_tasks():
+def show_task_details():
     with connect_db() as db:
         sql = """
             SELECT id, name, members
@@ -52,7 +59,7 @@ def show_all_tasks():
         params = ()
         tasks = db.execute(sql, params).fetchall()
 
-        return render_template("pages/task_details.jinja", tasks = tasks)
+        return render_template("pages/task_details.jinja", task = tasks)
 # #-----------------------------------------------------------
 # # New Task Form
 # #-----------------------------------------------------------
