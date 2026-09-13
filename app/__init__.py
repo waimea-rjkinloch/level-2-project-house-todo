@@ -28,11 +28,11 @@ def show_all_tasks():
     with connect_db() as db:
         sql = """
             SELECT 
-                topic.id    AS topic_id, 
-                topic.name  AS topic_name,
-                task.id     AS task_id, 
-                task.name   AS task_name,
-                task.urgency
+                topic.id     AS topic_id, 
+                topic.name   AS topic_name,
+                task.id      AS task_id, 
+                task.name    AS task_name,
+                task.urgency AS task_urgency
 
             FROM topic
             JOIN task ON task.topic_id = topic.id
@@ -42,7 +42,7 @@ def show_all_tasks():
         params = ()
         tasks = db.execute(sql, params).fetchall()
 
-        return render_template("pages/task_list.jinja", task = tasks)
+        return render_template("pages/task_list.jinja", tasks = tasks)
 
 #-----------------------------------------------------------
 # Details of Task
@@ -51,10 +51,20 @@ def show_all_tasks():
 def show_task_details():
     with connect_db() as db:
         sql = """
-            SELECT id, name, members
+            SELECT
+                topic.id         AS topic_id,
+                topic.name       AS topic_name,
+                topic.members    AS topic_members,
+                task.id          AS task_id,
+                task.name        AS task_name
+                task.description AS task_description
+                task.est_time    AS task_est_time
+                task.complete_by AS task_complete_by
+                task.urgency     AS task_urgency
+
             FROM topic
-            SELECT id, topic_id, name, details,  urgency
-            FROM task
+            JOIN task ON task.topic_id = topic.id
+
         """
         params = ()
         tasks = db.execute(sql, params).fetchall()

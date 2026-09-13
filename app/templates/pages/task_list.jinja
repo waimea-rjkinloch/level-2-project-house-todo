@@ -7,14 +7,12 @@
 
 {% block content %}
 
-    <h2>Tasks</h2>
-
     <section id="tasks">
 
         {% for task in tasks %}
 
             <div class="task">
-                    <p>{{ topic.topic_name}}</p>
+                    <p>{{ task.topic_name}}</p>
                     <p>{{ task.task_name }}</p>
                     <p>{{ task.task_urgency }}</p>
             </div>

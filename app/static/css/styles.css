@@ -46,14 +46,21 @@ body > header {
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
+    background-color: var(--back-col-dark);
 
     nav {
         display: flex;
         gap: 1rem;
 
         a {
-            color: var(--accent-col);
+            color: var(--text-col-light);
         }
+    }
+
+    h2 {
+        display: flex;
+        text-align: center;
+        color: var(--text-col-light);
     }
 }
 
@@ -79,8 +86,10 @@ main > h2 {
         padding: 1rem;
         box-shadow: 0 0.5rem 1rem #0004;
         border: 1px solid var(--border-col);
-        background-color: var(--back-col-panel);
-        }
+        background-color: var(--accent-col);
+
+        color: var(--text-col-light);
+        font-family:sans-serif;
+        font-weight:600px;
     }
 }
-
