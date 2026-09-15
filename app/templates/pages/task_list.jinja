@@ -1,7 +1,4 @@
-{#=====================================================
-  Base template
-  - Used as the basis of all pages
-=====================================================#}
+
 {% extends 'pages/_base.jinja' %}
 
 
@@ -15,6 +12,7 @@
                     <p>{{ task.topic_name}}</p>
                     <p>{{ task.task_name }}</p>
                     <p>{{ task.task_urgency }}</p>
+                    <a class="+_button" href="/task/{{ task.task_id }}/details">+</a>
             </div>
 
         {% else %}

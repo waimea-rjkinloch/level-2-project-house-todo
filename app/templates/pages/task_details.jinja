@@ -3,51 +3,49 @@
   - Used as the basis of all pages
 =====================================================#}
 
-<!DOCTYPE html>
+{% extends "_base.jinja" %}
 
-<html lang="en" data-theme="light">
+{% block content %}
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+<div class="task-details">
 
-	<title>Notes Demo {% block title %}{% endblock %}</title>
+    <a href="/tasks">← Back to tasks</a>
 
-    <link rel="icon" href="/static/images/note.svg">
+    <h1>{{ task.task_name }}</h1>
 
-    <script src="/static/js/utils.js"></script>
+    <p>
+        <strong>Topic:</strong>
+        {{ task.topic_name }}
+    </p>
 
-    <link rel="stylesheet" href="/static/css/reset.css">
-    <link rel="stylesheet" href="/static/css/messages.css">
-    <link rel="stylesheet" href="/static/css/styles.css">
-</head>
+    <p>
+        <strong>Description:</strong>
+        {{ task.description }}
+    </p>
 
-<body>
+    <p>
+        <strong>Estimated time:</strong>
+        {{ task.est_time }}
+    </p>
 
-    <header>
-        <a href="/">
-            Notes Demo
-        </a>
+    <p>
+        <strong>Complete by:</strong>
+        {{ task.complete_by }}
+    </p>
 
-        <nav>
-            <a href="/">All Notes</a>
-            <a href="/">Link</a>
-            <a href="/">Link</a>
-        </nav>
-    </header>
+    <p>
+        <strong>Urgency:</strong>
+        {{ task.urgency }}
+    </p>
 
-    {# Show flash messages from any previous events #}
-    {% include "partials/messages.jinja" %}
+    <p>
+        <strong>Members:</strong>
+        {{ task.members }}
+    </p>
 
-    <main>
+</div>
 
-        {% block content %}
-        {% endblock %}
+{% endblock %}
 
-    </main>
-
-</body>
-
-</html>
 
 

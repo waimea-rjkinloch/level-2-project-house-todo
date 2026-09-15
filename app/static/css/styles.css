@@ -19,7 +19,6 @@
 /* Overall Layout -----------------------------------------------*/
 
 html {
-    background-color: var(--back-col);
     color: var(--text-col);
 
     font-family: system-ui, sans-serif;
@@ -28,6 +27,7 @@ html {
 
 body {
     min-height: 100dvh;
+    margin: 0.5rem;
 }
 
 
@@ -47,6 +47,7 @@ body > header {
     justify-content: space-between;
     padding: 1rem;
     background-color: var(--back-col-dark);
+    border-radius: 10px 10px 10px 10px;
 
     nav {
         display: flex;
@@ -78,18 +79,33 @@ main > h2 {
 
 #tasks {
     display: grid;
-    gap: 2rem;
+    gap: 1.5rem;
     grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr));
     align-items: start;
+    background-color: var(--back-col);
+    padding:1.5rem;
 
     .task {
-        padding: 1rem;
+        padding: 0.75rem;
         box-shadow: 0 0.5rem 1rem #0004;
         border: 1px solid var(--border-col);
         background-color: var(--accent-col);
+        border-radius:20px 0px 20px 0px;
+
+        display:flex;
+        align-items:center;
 
         color: var(--text-col-light);
         font-family:sans-serif;
         font-weight:600px;
+
+        p{
+            margin:auto;
+        }
+        a{
+            text-decoration: none;
+            color:var(--text-col-light);
+            font-size:xx-large;
+        }
     }
 }

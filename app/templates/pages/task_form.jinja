@@ -7,9 +7,16 @@
 
 {% block content %}
 
-  <h2> New Creature Generator</h2>
+  <h2>Add Task</h2>
   
-  <form method ="post" action="/creature/new">
+  <form method ="post" action="/task/new">
+
+      <label>
+
+        Topic
+        <input type="text" name="topic" required>
+
+      </label>
 
       <label>
 
@@ -20,12 +27,29 @@
 
       <label>
 
-        Species
-        <input type="text" name="species" required>
+        Description
+        <input type="text" name="description" required>
 
       </label>
+      <label>
 
-      <button>Add Creature</button>
+        Estimate Task Time
+        <input type="integer" name="est_task_time" required>
+
+      </label>
+      <label>
+
+        Date To Be Completed
+        <input type="integer" name="complete_by" required>
+
+      </label>
+      <label>
+
+        Urgency
+        <input type="integer" name="urgency" required>
+
+      </label>
+      <button>Add</button>
 
   </form>
 

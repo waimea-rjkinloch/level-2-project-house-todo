@@ -28,11 +28,11 @@ def show_all_tasks():
     with connect_db() as db:
         sql = """
             SELECT 
-                topic.id     AS topic_id, 
-                topic.name   AS topic_name,
-                task.id      AS task_id, 
-                task.name    AS task_name,
-                task.urgency AS task_urgency
+                topic.id        AS topic_id, 
+                topic.name      AS topic_name,
+                task.id         AS task_id, 
+                task.name       AS task_name,
+                task.urgency    AS task_urgency
 
             FROM topic
             JOIN task ON task.topic_id = topic.id
@@ -47,62 +47,63 @@ def show_all_tasks():
 #-----------------------------------------------------------
 # Details of Task
 #-----------------------------------------------------------
-@app.get("/task/details")
-def show_task_details():
+@app.get("/task/<int:id>/details")
+def show_task_details(id):
     with connect_db() as db:
         sql = """
             SELECT
-                topic.id         AS topic_id,
-                topic.name       AS topic_name,
-                topic.members    AS topic_members,
-                task.id          AS task_id,
-                task.name        AS task_name
-                task.description AS task_description
-                task.est_time    AS task_est_time
-                task.complete_by AS task_complete_by
-                task.urgency     AS task_urgency
+                topic.id            AS topic_id,
+                topic.name          AS topic_name,
+                topic.members       AS topic_members,
+                task.id             AS task_id,
+                task.name           AS task_name,
+                task.description    AS task_description,
+                task.est_time       AS task_est_time,
+                task.complete_by    AS task_complete_by,
+                task.urgency        AS task_urgency
 
             FROM topic
             JOIN task ON task.topic_id = topic.id
+            WHERE task.id = ?
 
         """
-        params = ()
-        tasks = db.execute(sql, params).fetchall()
 
-        return render_template("pages/task_details.jinja", task = tasks)
-# #-----------------------------------------------------------
-# # New Task Form
-# #-----------------------------------------------------------
-# @app.get("/task/new")
-# def show_task_form():
-#     return render_template("pages/task_form.jinja")
-# #-----------------------------------------------------------
-# # Handle the task form data
-# #-----------------------------------------------------------
-# @app.post("/task/new")
-# def process_task_form():
-#     # Get the form data
-#     species = request.form.get("species", "unknown").strip()
-#     name = request.form.get("name", "unknown").strip()
+        tasks = db.execute(sql, (id,)).fetchone()
 
-#     # Connect to the db
-#     with connect_db() as db:
+        return render_template("pages/task_details.jinja", task=task)
+#-----------------------------------------------------------
+# New Task Form
+#-----------------------------------------------------------
+@app.get("/task/new")
+def show_task_form():
+    return render_template("pages/task_form.jinja")
+#-----------------------------------------------------------
+# Handle the task form data
+#-----------------------------------------------------------
+@app.post("/task/new")
+def process_task_form():
+    # Get the form data
+    species = request.form.get("species", "unknown").strip()
+    name = request.form.get("name", "unknown").strip()
 
-#         sql = """
+    # Connect to the db
+    with connect_db() as db:
 
-#                 INSERT INTO creatures (species,name)
-#                 VALUES (?, ?)
+        sql = """
 
-#         """
-#         params = (species, name)
+                INSERT INTO creatures (species,name)
+                VALUES (?, ?)
 
-#         #  Run the query
-#         db.execute(sql, params)
+        """
+        params = (species, name)
 
-#         flash(f"Creature {name} added successfully")
+        #  Run the query
+        db.execute(sql, params)
 
-#         # We're done, so back to the list
-#         return redirect("/creatures")
+        flash(f"Creature {name} added successfully")
+
+        # We're done, so back to the list
+        return redirect("/creatures")
 
 #===========================================================
 # Configure the app
