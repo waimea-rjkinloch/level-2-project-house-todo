@@ -68,7 +68,7 @@ def show_task_details(id):
 
         """
 
-        tasks = db.execute(sql, (id,)).fetchone()
+        task = db.execute(sql, (id,)).fetchone()
 
         return render_template("pages/task_details.jinja", task=task)
 #-----------------------------------------------------------
@@ -83,27 +83,31 @@ def show_task_form():
 @app.post("/task/new")
 def process_task_form():
     # Get the form data
-    species = request.form.get("species", "unknown").strip()
+    topic = request.form.get("topic", "unknown").strip()
     name = request.form.get("name", "unknown").strip()
+    description = request.form.get("description", "unknown").strip()
+    est_time = request.form.get("est_time", "unknown").strip()
+    complete_by = request.form.get("complete_by", "unknown").strip()
+    urgency = request.form.get("urgency", "unknown").strip()
 
     # Connect to the db
     with connect_db() as db:
 
         sql = """
 
-                INSERT INTO creatures (species,name)
-                VALUES (?, ?)
+                INSERT INTO task (topic, name, description, est_time, complete_by, urgency)
+                VALUES (?, ?, ?, ?, ?, ?)
 
         """
-        params = (species, name)
+        params = (topic, name, description, est_time, complete_by, urgency)
 
         #  Run the query
         db.execute(sql, params)
 
-        flash(f"Creature {name} added successfully")
+        flash(f"Task Added Successfully")
 
         # We're done, so back to the list
-        return redirect("/creatures")
+        return redirect("/")
 
 #===========================================================
 # Configure the app

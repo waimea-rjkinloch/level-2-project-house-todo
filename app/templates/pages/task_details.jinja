@@ -3,46 +3,54 @@
   - Used as the basis of all pages
 =====================================================#}
 
-{% extends "_base.jinja" %}
+{% extends "pages/_base.jinja" %}
 
 {% block content %}
+<header id="details_header">
+    <h2>Task Details</h2>
+</header>
+<div class="task_details">
 
-<div class="task-details">
-
-    <a href="/tasks">← Back to tasks</a>
-
-    <h1>{{ task.task_name }}</h1>
-
-    <p>
+    <p id="detail">
         <strong>Topic:</strong>
         {{ task.topic_name }}
     </p>
 
-    <p>
+    <p id="detail">
+        <strong>Name:</strong>
+        {{ task.task_name }}
+    </p>
+
+    <p id="detail">
         <strong>Description:</strong>
-        {{ task.description }}
+        {{ task.task_description }}
     </p>
 
-    <p>
-        <strong>Estimated time:</strong>
-        {{ task.est_time }}
-    </p>
-
-    <p>
-        <strong>Complete by:</strong>
-        {{ task.complete_by }}
-    </p>
-
-    <p>
-        <strong>Urgency:</strong>
-        {{ task.urgency }}
-    </p>
-
-    <p>
+    <p id="detail">
         <strong>Members:</strong>
-        {{ task.members }}
+        {{ task.topic_members }}
     </p>
 
+    <p id="detail">
+        <strong>Estimated time Needed:</strong>
+        {{ task.task_est_time }}
+    </p>
+
+    <p id="detail">
+        <strong>Complete By:</strong>
+        {{ task.task_complete_by }}
+    </p>
+
+    <p id="detail">
+        <strong>Urgency:</strong>
+        {{ task.task_urgency }}
+    </p>
+
+</div>
+<div class="detail_links">
+    <a id="edit_task" href="">Edit</a>
+    <a id="delete_task" href="">Delete</a>
+    <a id="detail_back" href="/">Back to List</a>
 </div>
 
 {% endblock %}

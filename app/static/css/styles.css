@@ -1,6 +1,6 @@
 /*===========================================================
-  PROJECT NAME HERE
-  By YOUR NAME HERE
+  Task Tracker 2000
+  Robbie
 ===========================================================*/
 
 :root {
@@ -9,7 +9,8 @@
 
     --back-col:          #56D8B1;
     --back-col-dark:     #094C38;
-    --back-col-med:      #478E78;    
+    --back-col-med:      #478E78;
+    --back-col-light:    #ffff;
 
     --accent-col:        #D43565;
     --accent-col-dark:   #8F2243;
@@ -38,44 +39,7 @@ main {
 }
 
 
-/* Header & Nav -----------------------------------------------*/
-
-body > header {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
-    background-color: var(--back-col-dark);
-    border-radius: 10px 10px 10px 10px;
-
-    nav {
-        display: flex;
-        gap: 1rem;
-
-        a {
-            color: var(--text-col-light);
-        }
-    }
-
-    h2 {
-        display: flex;
-        text-align: center;
-        color: var(--text-col-light);
-    }
-}
-
-
-/* Page Headings -----------------------------------------------*/
-
-main > h2 {
-    font-size: 2rem;
-    text-align: center;
-    margin-block: 2rem;
-}
-
-
-/* Notes --------------------------------------------------*/
+/* Task List CSS --------------------------------------------------*/
 
 #tasks {
     display: grid;
@@ -92,6 +56,7 @@ main > h2 {
         background-color: var(--accent-col);
         border-radius:20px 0px 20px 0px;
 
+        flex:1;
         display:flex;
         align-items:center;
 
@@ -108,4 +73,184 @@ main > h2 {
             font-size:xx-large;
         }
     }
+}
+.add_task_bar{
+    text-decoration:none;
+    color:var(--text-col-light);
+    background-color:var(--back-col-dark);
+    padding:1rem;
+    border-radius: 8px 8px 8px 8px;
+    display:flex;
+    margin-top:auto;
+    justify-content: center;
+    font-family:monospace;
+    font-weight:560;
+    font-size:1.2rem;
+    margin-top: 270px;
+    position:sticky;
+    bottom:0px
+    
+}
+
+header {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--back-col-dark);
+    border-radius: 10px 10px 10px 10px;
+    margin-bottom:1rem;
+
+    nav {
+        display: flex;
+        gap: 1rem;
+
+        a {
+            color: var(--text-col-light);
+            text-decoration: none;
+        }
+    }
+
+    h2 {
+        display:flex;
+        color: var(--text-col-light);
+    }
+}
+
+/*Task Details CSS------------------------------------------------*/
+
+.task_details{
+    background-color: var(--back-col);
+    color:var(--text-col);
+    padding:1rem;
+    border-radius: 10px 10px 10px 10px;
+
+        #detail{
+            background-color: var(--back-col-light);
+            border-radius: 5px 5px 5px 5px;
+            margin:1rem;
+            padding:10px;
+        }
+}
+.detail_links{
+    #delete_task{
+        background-color: var(--accent-col-dark);
+        text-decoration: none;
+        color:var(--text-col-light);
+        display:flex;
+        margin-top:auto;
+        justify-content: center;
+        font-family:monospace;
+        border-radius: 8px 8px 8px 8px;
+        padding: 1rem;
+        font-size:1.2rem;
+        margin-top:0.75rem;
+        font-weight:560
+    }
+
+    #edit_task{
+        background-color: var(--back-col-med);
+        text-decoration: none;
+        color:var(--text-col-light);
+        display:flex;
+        margin-top:auto;
+        justify-content: center;
+        font-family:monospace;
+        border-radius: 8px 8px 8px 8px;
+        padding: 1rem;
+        font-size:1.2rem;
+        margin-top:0.75rem;
+        font-weight:560
+    }
+
+    #detail_back{
+        background-color: var(--accent-col);
+        text-decoration: none;
+        color:var(--text-col-light);
+        display:flex;
+        margin-top:auto;
+        justify-content: center;
+        font-family:monospace;
+        border-radius: 8px 8px 8px 8px;
+        padding: 1rem;
+        font-size:1.2rem;
+        margin-top:0.75rem;
+        font-weight:560
+
+    }
+}
+#details_header{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--back-col-dark);
+    border-radius: 10px 10px 10px 10px;
+    text-decoration: none;
+    color:var(--text-col-light);
+}
+
+/*Task Form CSS--------------------------------------------------*/
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    width: 20rem;
+    margin-inline: auto;
+
+    padding: 1rem;
+    border :1px solid  var(--border-col);
+    border-radius: 0.5rem;
+    background-color: var(--back-col);
+
+    label {
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+#add_task_button {
+    background-color: var(--back-col-med);
+    text-decoration: none;
+    color:var(--text-col-light);
+    display:flex;
+    margin-top:auto;
+    justify-content: center;
+    font-family:monospace;
+    border-radius: 8px 8px 8px 8px;
+    padding: 1rem;
+    font-size:1.2rem;
+    margin-top:0.75rem;
+    font-weight:560
+}
+#cancel_task_button{
+    background-color: var(--accent-col);
+    text-decoration: none;
+    color:var(--text-col-light);
+    display:flex;
+    margin-top:auto;
+    justify-content: center;
+    font-family:monospace;
+    border-radius: 8px 8px 8px 8px;
+    padding: 1rem;
+    font-size:1.2rem;
+    margin-top:0.75rem;
+    font-weight:560
+}
+
+#form_header{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--back-col-dark);
+    border-radius: 10px 10px 10px 10px;
+    text-decoration: none;
+    color:var(--text-col-light);
 }

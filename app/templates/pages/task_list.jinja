@@ -4,14 +4,22 @@
 
 {% block content %}
 
+    <header>
+        <h2>Task Tracker 2000</h2>
+
+        <nav>
+            <a href="/">Calender</a>
+        </nav>
+    </header>
+
     <section id="tasks">
 
         {% for task in tasks %}
 
             <div class="task">
+                    <p>{{ task.task_urgency }}</p>
                     <p>{{ task.topic_name}}</p>
                     <p>{{ task.task_name }}</p>
-                    <p>{{ task.task_urgency }}</p>
                     <a class="+_button" href="/task/{{ task.task_id }}/details">+</a>
             </div>
 
@@ -22,5 +30,5 @@
         {% endfor %}
 
     </section>
-
+    <a class="add_task_bar" href="/task/new">Add Task</a>
 {% endblock %}

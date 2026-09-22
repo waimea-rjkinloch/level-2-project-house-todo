@@ -7,49 +7,54 @@
 
 {% block content %}
 
-  <h2>Add Task</h2>
-  
+  <header id="form_header">
+    <h2>Add Task</h2>
+  </header>
+
   <form method ="post" action="/task/new">
+    <div class="form">
 
       <label>
 
-        Topic
+        Topic:
         <input type="text" name="topic" required>
 
       </label>
 
       <label>
 
-        Name
+        Name:
         <input type="text" name="name" required>
 
       </label>
 
       <label>
 
-        Description
+        Description:
         <input type="text" name="description" required>
 
       </label>
       <label>
 
-        Estimate Task Time
-        <input type="integer" name="est_task_time" required>
+        Estimate Task Time:
+        <input type="integer" name="est_time" required>
 
       </label>
       <label>
 
-        Date To Be Completed
+        Date To Be Completed:
         <input type="integer" name="complete_by" required>
 
       </label>
       <label>
 
-        Urgency
+        Urgency:
         <input type="integer" name="urgency" required>
 
       </label>
-      <button>Add</button>
+    </div>
+    <button id="add_task_button">Add</button>
+    <a id="cancel_task_button" href="/">Cancel</a>
 
   </form>
 
