@@ -86,7 +86,7 @@ main {
     font-family:monospace;
     font-weight:560;
     font-size:1.2rem;
-    margin-top: 270px;
+    margin-top: 255px;
     position:sticky;
     bottom:0px
     
@@ -226,7 +226,8 @@ header {
     padding: 1rem;
     font-size:1.2rem;
     margin-top:0.75rem;
-    font-weight:560
+    font-weight:560;
+    width:345px
 }
 #cancel_task_button{
     background-color: var(--accent-col);
@@ -254,3 +255,25 @@ header {
     text-decoration: none;
     color:var(--text-col-light);
 }
+.dropdown-container {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+  }
+  
+  label {
+    margin-bottom: 8px;
+
+  }
+  input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  input:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }

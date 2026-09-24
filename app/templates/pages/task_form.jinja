@@ -14,12 +14,23 @@
   <form method ="post" action="/task/new">
     <div class="form">
 
-      <label>
-
-        Topic:
-        <input type="text" name="topic" required>
-
-      </label>
+      <div class="select-container">
+        <p>Topic of Task:</p>
+          <select id="select-word" name="select-word">
+            <option value="" disabled selected>Enter Topic Here</option>
+            <option value="Cooking">Cooking</option>
+            <option value="Cleaning">Cleaning</option>
+            <option value="Casual_Outdoors">Casual Outdoors</option>
+            <option value="Casual">Casual</option>
+            <option value="Heavyweight">Heavyweight</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+      </div>
+    </select>
 
       <label>
 
@@ -34,24 +45,41 @@
         <input type="text" name="description" required>
 
       </label>
-      <label>
-
-        Estimate Task Time:
-        <input type="integer" name="est_time" required>
-
-      </label>
+          <div class="select-container">
+            <p>Select an Estimated Task Time:</p>
+            <select id="select-word" name="select-word">
+              <option value="" disabled selected>Estimated Task Time</option>
+              <option value="0-1 minutes">0-1 minutes</option>
+              <option value="1-5 minutes">1-5 minutes</option>
+              <option value="5-10 minutes">5-10 minutes</option>
+              <option value="10-30 minutes">10-30 minutes</option>
+              <option value="30-1 hour">30-1 hour</option>
+              <option value="1-2 hours">1-2 hours</option>
+              <option value="2 hours +">2 hours +</option>
+            </select>
+        </div>
       <label>
 
         Date To Be Completed:
         <input type="integer" name="complete_by" required>
 
       </label>
-      <label>
-
-        Urgency:
-        <input type="integer" name="urgency" required>
-
-      </label>
+        <div class="select-container">
+            <p>Select an Urgency:</p>
+            <select id="select-word" name="select-word">
+              <option value="" disabled selected>Urgency</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+        </div>
     </div>
     <button id="add_task_button">Add</button>
     <a id="cancel_task_button" href="/">Cancel</a>

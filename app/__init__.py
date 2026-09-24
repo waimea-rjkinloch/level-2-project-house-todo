@@ -76,6 +76,12 @@ def show_task_details(id):
 #-----------------------------------------------------------
 @app.get("/task/new")
 def show_task_form():
+    with connect_db() as db:
+        sql = """
+            SELECT id, name
+            FROM topic
+        """
+        topics=db.execute(sql).fetchall()
     return render_template("pages/task_form.jinja")
 #-----------------------------------------------------------
 # Handle the task form data
@@ -95,7 +101,7 @@ def process_task_form():
 
         sql = """
 
-                INSERT INTO task (topic, name, description, est_time, complete_by, urgency)
+                INSERT INTO task (topic_id, name, description, est_time, complete_by, urgency)
                 VALUES (?, ?, ?, ?, ?, ?)
 
         """
@@ -107,6 +113,23 @@ def process_task_form():
         flash(f"Task Added Successfully")
 
         # We're done, so back to the list
+        return redirect("/")
+
+#-----------------------------------------------------------
+# Task deletion - delete a task via ID
+#-----------------------------------------------------------
+@app.get("/task/<int:id>/delete")
+def delete_a_task(id):
+    with connect_db() as db:
+        # Delete a task using its ID
+        sql = """
+            DELETE FROM task
+            WHERE id=?
+        """
+        params = (id,)
+        db.execute(sql, params)
+        #Back to the list of tasks
+        flash("Task Deleted", "Success")
         return redirect("/")
 
 #===========================================================
