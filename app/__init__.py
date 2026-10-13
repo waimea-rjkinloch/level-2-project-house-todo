@@ -123,7 +123,7 @@ def delete_a_task(id):
     with connect_db() as db:
         # Delete a task using its ID
         sql = """
-            DELETE FROM task & topic
+            DELETE FROM task
             WHERE id=?
         """
         params = (id,)

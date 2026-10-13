@@ -14,16 +14,20 @@
   <form method ="post" action="/task/new">
     <div class="form">
 
-       <label>
-
-        Topic:
-        <input type="text" name="topic" required>
-        
-      </label>
+    <label>Topic:</label>
+    <select name="topic" id="topic_dropdown">
+      <option value="1">Cooking</option>
+      <option value="2">Cleaning</option>
+      <option value="3">Casual</option>
+      <option value="4">Repairing</option>
+      <option value="5">Casual Outdoors</option>
+      <option value="6">Heavyweight Outdoors</option>
+    </select>
 
       <label>
 
-        Name:
+      Name:
+
         <input type="text" name="name" required>
 
       </label>
@@ -49,13 +53,19 @@
 
       </label>
 
-      <label>
-
-        Urgency:
-        <input type="int" name="urgency" required>
-
-      </label>
-
+      <label>Urgency:</label>
+      <select name="urgency" id="urgency_dropdown">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
     </div>
     <button id="add_task_button">Add</button>
     <a id="cancel_task_button" href="/">Cancel</a>
@@ -63,37 +73,3 @@
   </form>
 
 {% endblock %}
-
-      {# <p>Topic of Task:</p>
-      <div class="form_select_container">
-          <select id="select_topic" name="topic">
-            <option value="" disabled selected class="dropdown_title">Enter Topic Here</option>
-            <option value="Cooking">Cooking</option>
-            <option value="Cleaning">Cleaning</option>
-            <option value="Casual_Outdoors">Casual Outdoors</option>
-            <option value="Casual">Casual</option>
-            <option value="Heavyweight">Heavyweight</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-          </select>
-      </div>
-    </select>
-        <p>Select an Urgency:</p>
-        <div class="form_select_container">
-            <select id="select_urgency" name="urgency">
-              <option value="" disabled selected>Urgency</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-            </select>
-        </div> #}

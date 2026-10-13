@@ -59,13 +59,14 @@ main {
         flex:1;
         display:flex;
         align-items:center;
+        gap: 1rem;
 
         color: var(--text-col-light);
         font-family:sans-serif;
         font-weight:600px;
 
-        p{
-            margin:auto;
+        :nth-child(2) {
+            flex: 1;
         }
         a{
             text-decoration: none;
