@@ -87,9 +87,8 @@ main {
     font-family:monospace;
     font-weight:560;
     font-size:1.2rem;
-    margin-top: 255px;
     position:sticky;
-    bottom:0px
+    bottom:1rem;
     
 }
 
@@ -102,6 +101,8 @@ header {
     background-color: var(--back-col-dark);
     border-radius: 10px 10px 10px 10px;
     margin-bottom:1rem;
+    position: sticky;
+    top:1rem;
 
     nav {
         display: flex;

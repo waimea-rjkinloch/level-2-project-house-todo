@@ -82,14 +82,14 @@ def show_task_form():
             FROM topic
         """
         topics=db.execute(sql).fetchall()
-    return render_template("pages/task_form.jinja")
+    return render_template("pages/task_form.jinja", topics=topics)
 #-----------------------------------------------------------
 # Handle the task form data
 #-----------------------------------------------------------
 @app.post("/task/new")
 def process_task_form():
     # Get the form data
-    topic = request.form.get("topic", "unknown").strip()
+    topic = request.form.get("topic_id", "").strip()
     name = request.form.get("name", "unknown").strip()
     description = request.form.get("description", "unknown").strip()
     est_time = request.form.get("est_time", "unknown").strip()

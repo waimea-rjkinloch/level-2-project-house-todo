@@ -31,8 +31,10 @@ class TopicTable:
         VALUES
             ("Cleaning", "Chris & Sue"),
             ("Cooking", "Robbie & Sue"),
-            ("Casual", "Robbie & Sue & Jack"),
-            ("Outdoors", "Jack & Chris")
+            ("Casual", "Whole Family"),
+            ("Repairing", "Chris & Jack"),
+            ("Casual-Outdoors", "Whole Family"),
+            ("Heavyweight-Outdoors", "Jack, Chris & Robbie")
     """
 
 class TaskTable:
