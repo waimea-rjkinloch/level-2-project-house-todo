@@ -80,16 +80,17 @@ main {
     color:var(--text-col-light);
     background-color:var(--back-col-dark);
     padding:1rem;
-    border-radius: 8px 8px 8px 8px;
-    display:flex;
-    margin-top:auto;
+    border-radius: 8px;
     justify-content: center;
     font-family:monospace;
     font-weight:560;
     font-size:1.2rem;
     position:sticky;
     bottom:1rem;
-    
+    display: flex;
+    margin-top: 1rem;
+
+
 }
 
 header {
@@ -103,16 +104,6 @@ header {
     margin-bottom:1rem;
     position: sticky;
     top:1rem;
-
-    nav {
-        display: flex;
-        gap: 1rem;
-
-        a {
-            color: var(--text-col-light);
-            text-decoration: none;
-        }
-    }
 
     h2 {
         display:flex;
@@ -151,7 +142,7 @@ header {
         font-weight:560
     }
 
-    #edit_task{
+    /* #edit_task{
         background-color: var(--back-col-med);
         text-decoration: none;
         color:var(--text-col-light);
@@ -163,8 +154,8 @@ header {
         padding: 1rem;
         font-size:1.2rem;
         margin-top:0.75rem;
-        font-weight:560
-    }
+        font-weight:560 */
+    /* } */
 
     #detail_back{
         background-color: var(--accent-col);
@@ -257,25 +248,3 @@ header {
     text-decoration: none;
     color:var(--text-col-light);
 }
-/* .dropdown-container {
-    display: flex;
-    flex-direction: column;
-    width: 250px;
-  }
-  
-  label {
-    margin-bottom: 8px;
-
-  }
-  input {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    outline: none;
-  }
-  
-  input:focus {
-    border-color: #007BFF;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-  } */

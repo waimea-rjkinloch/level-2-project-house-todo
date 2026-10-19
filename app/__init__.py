@@ -132,6 +132,59 @@ def delete_a_task(id):
         flash("Task Deleted", "Success")
         return redirect("/")
 
+#-----------------------------------------------------------
+# New Task Form
+#-----------------------------------------------------------
+# @app.get("/task/edit/<int:id>")
+# def show_task_edit_form(id):
+#     with connect_db() as db:
+#         sql = """
+#             SELECT id, topic_id, name, description, est_time, complete_by, urgency
+#             FROM task
+#             WHERE id = ?
+#         """
+#         task = db.execute(sql, (id,)).fetchone
+        
+#         sql = """
+#             SELECT id, name
+#             FROM topic
+#         """
+
+#         topics=db.execute(sql).fetchall()
+#     return render_template("pages/task_edit_form.jinja", task=task, topics=topics)
+
+#-----------------------------------------------------------
+# Handle the task form data
+#-----------------------------------------------------------
+# @app.post("/task/edit")
+# def process_task_edit_form():
+#     # Get the form data
+#     topic = request.form.get("topic_id", "").strip()
+#     name = request.form.get("name", "").strip()
+#     description = request.form.get("description", "").strip()
+#     est_time = request.form.get("est_time", "").strip()
+#     complete_by = request.form.get("complete_by", "").strip()
+#     urgency = request.form.get("urgency", "").strip()
+
+#     # Connect to the db
+#     with connect_db() as db:
+
+#         sql = """
+
+#                 INSERT INTO task (topic_id, name, description, est_time, complete_by, urgency)
+#                 VALUES (?, ?, ?, ?, ?, ?)
+
+#         """
+#         params = (topic, name, description, est_time, complete_by, urgency)
+
+#         #  Run the query
+#         db.execute(sql, params)
+
+#         flash(f"Task Edited Successfully")
+
+#         # We're done, so back to the list
+#         return redirect("/")
+
 #===========================================================
 # Configure the app
 #===========================================================
