@@ -77,11 +77,11 @@ This Figma demo shows the initial layout design for the UI:
 ![Ui Flow v2](screenshots/ui_flow_v2.png)
 ### Testing
 
-This layout is good in general but another page or tab to schedule tasks could be handy
+This layout is good in general but a way to remove a task will be neccessary to prevent clutter
 
 ### Changes / Improvements
 
-I have added a drop down menu at the header with allows the user to schedule tasks simply.
+I have added a remove button in the task details page to allow the user to remove tasks at will
 
 *FIGMA IMPROVED PROTOTYPE - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT*
 ![Ui Flow v3](screenshots/ui_flow_v3.png)
@@ -95,14 +95,14 @@ This Figma demo shows the UI with refinements applied:
 *FIGMA REFINED PROTOTYPE - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT*
 ![Ui Flow v3](screenshots/ui_flow_v3.png)
 ### Testing
-The website needs more of a variety of color, fonts and more detail of each interactable thing but layout is good.
+The website needs more of a variety of color, fonts and more detail of each interactable thing but the layout is really good.
 
 ![Colors1](screenshots/Blue&red.png)
 ![Colors2](screenshots/green&purple.png)
 ![Colors3](screenshots/purple&green.png)
 ![Colors4](screenshots/red&blue.png)
 ![Colors5](screenshots/torquoise&red.png)
-From this color selection she prefers the torquoise primary and red secondary looked the best in a website setting as they stood out from eachother well and looked good in a website.
+From this color selection she prefers the torquoise primary and red secondary looked the best in a website setting as they stood out from eachother well and looked good in a website format.
 ### Changes / Improvements
 
 I fully refined the website giving color variety, fonts and detail about everything and utilised the torquoise and red color base that was favourited
@@ -112,5 +112,5 @@ I fully refined the website giving color variety, fonts and detail about everyth
 
 ## Sprint Review
 
-Replace this text with a statement about how the sprint has moved the project forward - key success point, any things that didn't go so well, etc.
-
+This sprint has overall moved the project forward in terms of layout, features, colors and overall style tranforming it into a few pages of grey squares asnd text into a visually appealing website and functional.
+Nothing went particuarly bad, the prototypes and designs moved forward well.

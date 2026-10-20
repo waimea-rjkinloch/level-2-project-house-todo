@@ -126,55 +126,44 @@ header {
             padding:10px;
         }
 }
-.detail_links{
-    
-    #completed_task{
-        background-color: var(--back-col-dark);
-        color:var(--text-col-light);
-        display:flex;
-        margin-top:auto;
-        text-decoration: none;
-        justify-content: center;
-        font-family:monospace;
-        border-radius: 8px 8px 8px 8px;
-        padding: 1rem;
-        font-size:1.2rem;
-        margin-top:0.75rem;
-        font-weight:560
-    }
-
-    #delete_task{
-        background-color: var(--accent-col-dark);
-        color:var(--text-col-light);
-        display:flex;
-        margin-top:auto;
-        text-decoration: none;
-        justify-content: center;
-        font-family:monospace;
-        border-radius: 8px 8px 8px 8px;
-        padding: 1rem;
-        font-size:1.2rem;
-        margin-top:0.75rem;
-        font-weight:560
-    }
-
-
-    #detail_back{
-        background-color: var(--accent-col);
-        color:var(--text-col-light);
-        display:flex;
-        margin-top:auto;
-        text-decoration: none;
-        justify-content: center;
-        font-family:monospace;
-        border-radius: 8px 8px 8px 8px;
-        padding: 1rem;
-        font-size:1.2rem;
-        margin-top:0.75rem;
-        font-weight:560
-
-    }
+#delete_task{
+    background-color: var(--accent-col-dark);
+    color:var(--text-col-light);
+    display:flex;
+    margin-top:auto;
+    text-decoration: none;
+    justify-content: center;
+    font-family:monospace;
+    border-radius: 8px 8px 8px 8px;
+    padding: 1rem;
+    font-size:1.2rem;
+    font-weight:560;
+    flex:1;
+    text-align:center;
 }
+
+
+#detail_back{
+    background-color: var(--accent-col);
+    color:var(--text-col-light);
+    display:flex;
+    margin-top:auto;
+    text-decoration: none;
+    justify-content: center;
+    font-family:monospace;
+    border-radius: 8px 8px 8px 8px;
+    padding: 1rem;
+    font-size:1.2rem;
+    font-weight:560;
+    flex: 1;
+    text-align: center;
+}
+.detail_links{
+    display:flex;
+    gap:10px;
+    margin-top:0.75rem;
+}
+
 #details_header{
     display: flex;
     gap: 1rem;
@@ -222,7 +211,7 @@ header {
     font-size:1.2rem;
     margin-top:0.75rem;
     font-weight:560;
-    width:345px
+    flex:1;
 }
 #cancel_task_button{
     background-color: var(--accent-col);
@@ -236,7 +225,13 @@ header {
     padding: 1rem;
     font-size:1.2rem;
     margin-top:0.75rem;
-    font-weight:560
+    font-weight:560;
+    flex:1;
+}
+#form_links{
+    display: flex;
+    gap:10px;
+    margin-top:0.75rem;
 }
 
 #form_header{
