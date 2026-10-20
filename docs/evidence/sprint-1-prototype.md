@@ -37,7 +37,7 @@ The user will input the following:
 - Name of the Task (self write)
 - Details/notes of the task (self write)
 - Date/time to be completed by (self write)
-- Estimated time the task will take (drop down menu)
+- Estimated time the task will take (self write)
 - Urgency of the task (drop down menu)
 
 ### Required Data Output
@@ -46,7 +46,7 @@ Once the User has inputed their data about the task. The name, topic and urgency
 
 ### Required Data Processing
 
-The urgency of the task (number between 1 and 10) will prcoess the inputed number into a color relevant to how urgent the task needs to be completed eg 10 will be a dark red, 5 will be a medium yellow and 1 will be lime green
+The topic of the task (between 6 options) will process the selected topic to match with the recommended family members for that specific topic eg. cleaning will process for the members to be Chris and Sue
 
 ## UI 'Flow'
 

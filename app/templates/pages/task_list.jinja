@@ -14,7 +14,7 @@
         {% for task in tasks %}
 
             <div class="task">
-                    <p>{{ task.task_urgency }}</p>
+                    <p><strong>{{ task.task_urgency }}</strong></p>
                     <p>{{ task.topic_name}}</p>
                     <p>{{ task.task_name }}</p>
                     <a class="+_button" href="/task/{{ task.task_id }}/details">+</a>
