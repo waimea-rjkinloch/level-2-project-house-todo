@@ -21,62 +21,44 @@ Implement the database, populated with test data. Create queries that retrieve t
     - Etc.
 
 
-## Testing FEATURE NAME HERE
+## Testing if all the tasks show
 
-I am testing if the tasks details displays all the correct information according to the tasks id
-
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
-
-![Details Test](screenshots/details_test.png)
-
-### Changes / Improvements
-
-This test went successful, the page perfectly displayed all the correct details
-
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**
-
-No improvement or changes were needed to improve or fix the task details system
-
-## Testing FEATURE NAME HERE
-
-I am testing if the task form perfectly creates a new task according to the inputed information
+I am testing whether all the tasks in the database show in the task list
 
 **PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
 
-![Delete Task Test p1](screenshots/delete_test_p1.png)
-![Delete Task Test p2](screenshots/delete_test_p2.png)
-![Delete Task Test p3](screenshots/delete_test_p3.png)
+![Database Check p1](screenshots/database_test_p1.png)
+![Database Check p2](screenshots/database_test_p2.png)
 
 ### Changes / Improvements
 
-The task was created successfully with all the correct inputed information
+The test went successful, the list shows all the tasks in the database
 
 **PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**
 
-No improvements or changes were needed to improve or fix the deletion system
+No improvements or changes were needed to improve or fix the database system
 
-## Testing FEATURE NAME HERE
+## Testing if all the details in the database show correctly in the detail page
 
-I am testing if the delete task function works successfully and deletes the selected task
+I am testing wheter all the details of the tasks on the list match the ones on the database
 
 **PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
 
-![Add Task Test p1](screenshots/add_test_p1.png)
-![Add Task Test p2](screenshots/add_test_p2.png)
-![Add Task Test p3](screenshots/add_test_p3.png)
+![Database detail Check p1](screenshots/database_details_test_p1.png)
+![Database detail Check p2](screenshots/database_details_test_p2.png)
 
 ### Changes / Improvements
 
-The task was deleted successfully and all the inputed information was deleted from the database
+The test went successful, all the details in the database match with the details in the task detail page
 
 **PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**
 
-No improvement or changes were needed to improve or fix this task adding system
+No improvements or changes were needed to improve or fix the details of the database system
+
 
 ## ETC...
 
 
 ## Sprint Review
 
-Replace this text with a statement about how the sprint has moved the project forward - key success point, any things that didn't go so well, etc.
-
+This sprint went successful as all the details and tasks that was loaded onto the database were correctly displayed on the website

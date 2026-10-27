@@ -16,52 +16,62 @@ Continue to develop the web application to the point that it provides all key fu
     - Add a new ...
     - Etc.
 
+## Testing details of the task
 
-## Testing FEATURE NAME HERE
-
-Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
-
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
-
-![Placeholder](screenshots/placeholder.png)
-
-### Changes / Improvements
-
-Replace this text with notes any improvements you made as a result of the testing.
-
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**
-
-
-## Testing FEATURE NAME HERE
-
-Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
+I am testing if the tasks details displays all the correct information according to the tasks id
 
 **PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
 
+![Details Test](screenshots/details_test.png)
+
 ### Changes / Improvements
 
-Replace this text with notes any improvements you made as a result of the testing.
+This test went successful, the page perfectly displayed all the correct details
 
 **PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**
 
+No improvement or changes were needed to improve or fix the task details system
 
-## Testing FEATURE NAME HERE
+## Testing deletion of a task
 
-Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
+I am testing if the task form perfectly creates a new task according to the inputed information
 
 **PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
 
+![Delete Task Test p1](screenshots/delete_test_p1.png)
+![Delete Task Test p2](screenshots/delete_test_p2.png)
+![Delete Task Test p3](screenshots/delete_test_p3.png)
+
 ### Changes / Improvements
 
-Replace this text with notes any improvements you made as a result of the testing.
+The task was created successfully with all the correct inputed information
 
 **PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**
 
+No improvements or changes were needed to improve or fix the deletion system
+
+## Testing the addition of a task
+
+I am testing if the delete task function works successfully and deletes the selected task
+
+**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
+
+![Add Task Test p1](screenshots/add_test_p1.png)
+![Add Task Test p2](screenshots/add_test_p2.png)
+![Add Task Test p3](screenshots/add_test_p3.png)
+
+### Changes / Improvements
+
+The task was deleted successfully and all the inputed information was deleted from the database
+
+**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**
+
+No improvement or changes were needed to improve or fix this task adding system
 
 ## ETC...
 
 
 ## Sprint Review
 
-Replace this text with a statement about how the sprint has moved the project forward - key success point, any things that didn't go so well, etc.
+This sprint went very successful in regards to the functionality of the webstie and how each feature (deleting, adding or seeing the details of tasks) met its purpose.
 
