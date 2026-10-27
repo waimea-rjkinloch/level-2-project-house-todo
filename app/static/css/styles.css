@@ -218,7 +218,7 @@ header {
     text-decoration: none;
     color:var(--text-col-light);
     display:flex;
-    margin-top:auto;
+    margin-top:0;
     justify-content: center;
     font-family:monospace;
     border-radius: 8px 8px 8px 8px;
@@ -228,11 +228,15 @@ header {
     font-weight:560;
     flex:1;
 }
-#form_links{
+.form_links{
     display: flex;
+    flex-direction:row;
     gap:10px;
+    width:100%;
     margin-top:0.75rem;
+    align-items: stretch;
 }
+
 
 #form_header{
     display: flex;
