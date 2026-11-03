@@ -20,7 +20,7 @@ The app has the following key features:
 
 ## Supporting Documents
 
-[GH pages site](https://level-2-project-house-todo/)
+[GH Pages site](https://waimea-rjkinloch.github.io/level-2-project-house-todo/)*
 
 Task Instructions:
 - [Instruction documents](docs/instructions/)
@@ -40,7 +40,7 @@ Project Evidence
 - [SQLite](https://sqlite.org/) for the database
 - [Jinja2](https://jinja.palletsprojects.com/templates/) for page templating
 
-*For easier reading, the docs are hosted as a [GH Pages site](https://waimea-rjkinloch.github.io/level-2-project-house-todo/)*
+
 
 
 ## Project Structure
