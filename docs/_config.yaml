@@ -1,7 +1,7 @@
-title: Flask Project Template
-description: A starter Flask, Jinja and SQLite project
-author: Digital Technologies Dept.
+title: HouseHold Task Tracker
+description: A Website For Tracking Your Tasks
+author: Robbie Kinloch
 
 # If development is true, guides will be shown
-development: true
+development: false
 picotheme: azure
