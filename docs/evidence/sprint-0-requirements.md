@@ -37,8 +37,7 @@ Accesibility to the app is important for the project because ALL users deserve t
 
 ### Impact / Considerations
 
-There will be a sufficient contrast between text colour and backgroud color to allow for easy sighting of text for users who struggle with eyesight, the app will be able to be configured between phone, ipad, tablet and computer to give accesibility to all users using different interfaces, all images will also contain alternate text to give information on what the image was suppost to display if it was malfunctional
-
+There will be a sufficient contrast between text colour and backgroud color to allow for easy sighting of text for users who struggle with eyesight and the app will be able to be configured between phone, ipad, tablet and computer to give accesibility to all users using different interfaces
 
 ## Functionality
 

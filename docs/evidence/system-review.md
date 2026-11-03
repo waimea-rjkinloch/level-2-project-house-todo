@@ -4,12 +4,12 @@
 
 ### NAME OF IMPLICATION: Usability
 
-I implicated the heuristic of usability into my website by 
+I implicated the heuristic of usability into my website by having the main functions of the website such as checking what tasks are on the list or just creating a new task being simplistic and efficient to use, and not wasting any time by only needing the fewest clicks to function the website. It also implicated usability by having a error prevention in the create new task form, the system prevents the user from creating a task if any of the boxes hasnt been filled out aswell as using a dropdown menu in the topic and urgency to prevent the user from inputing invalid data.
 
 
 ### NAME OF IMPLICATION: Accesibility
 
-I implicated the heuristic of accesibiity into my website by 
+I implicated the heuristic of accesibiity into my website by first, having a color pallete that contrasts well between each other. These colors will help users who struggle with their eyesight to access and easily function the website. Secondly, the website will be able to appealingly layout based on what size of device the user is operating the website on, this will help the users who may not have a phone or computer accesible to still be able to use the website well.
 
 
 ### NAME OF IMPLICATION: Functionality
@@ -29,9 +29,5 @@ I implicated the heuristic of end user into my website by building the features 
 
 ## Overall Review
 
-Replace these words with a brief review of how the project went in terms of:
-- What went well?
-- What didn't go so well?
-- How did the testing/trialling impact the final system?
-- What would you do differently if you could?
+This final system review went well because my website met all the implications of usability, functionality, end user, aesthetical and accesibility I intended it to.
 

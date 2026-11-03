@@ -8,36 +8,36 @@
 Use advanced techniques to develop a database means that, taking into account the problem / need and the end users:
 
 1. You must first define the purpose of your system and the end-users' needs:
-   - [ ] Define the **purpose of the system** that uses the database
-   - [ ] Describe the **needs of the end-users**
-   - [ ] Define the **key functionality** of the proposed system
+   - [X] Define the **purpose of the system** that uses the database
+   - [X] Describe the **needs of the end-users**
+   - [X] Define the **key functionality** of the proposed system
 
 2. You need to design the structure of the database:
-   - [ ] **Tables** - at least two that are linked by a relationship
-   - [ ] **Data Types** - a range of data types used
-   - [ ] **Key Fields** - primary keys for each table, foreign keys for relationships
-   - [ ] **Values** - auto-generation / default values as required
-   - [ ] Source and structure of **Input Data** is described
-   - [ ] Type and format of **Output Data** is described
-   - [ ] **Processing of Data** to achieve the output is described
+   - [X] **Tables** - at least two that are linked by a relationship
+   - [X] **Data Types** - a range of data types used
+   - [X] **Key Fields** - primary keys for each table, foreign keys for relationships
+   - [X] **Values** - auto-generation / default values as required
+   - [X] Source and structure of **Input Data** is described
+   - [X] Type and format of **Output Data** is described
+   - [X] **Processing of Data** to achieve the output is described
 
 3. You should use appropriate tools and advanced techniques to organise and query the data:
-   - [ ] **Linking data in related tables** using queries or keys
-   - [ ] Writing **custom queries** to update the data (INSERT / UPDATE / DELETE)
+   - [X] **Linking data in related tables** using queries or keys
+   - [X] Writing **custom queries** to update the data (INSERT / UPDATE / DELETE)
 
 4. You should use appropriate tools and advanced techniques to present the data:
-   - [ ] Creating **customised data displays from multiple tables** for web pages
-   - [ ] **Dynamically linking data** between the database and web pages
-   - [ ] Applying **data access permissions** as appropriate (user accounts)
+   - [X] Creating **customised data displays from multiple tables** for web pages
+   - [X] **Dynamically linking data** between the database and web pages
+   - [X] Applying **data access permissions** as appropriate (user accounts)
 
 5. You must apply appropriate data integrity and testing procedures:
-   - [ ] Show that any **presented data is correct** (e.g. matches database values / calculations)
-   - [ ] Show that any input user data **updates the database as expected**
+   - [X] Show that any **presented data is correct** (e.g. matches database values / calculations)
+   - [X] Show that any input user data **updates the database as expected**
 
 6. You need to explain and address relevant implications:
-   - [ ] Identify the **implications most relevant** to your project
-   - [ ] Explain **what the implications mean** and **why each is relevant** to your project
-   - [ ] Explain **how each implication will impact your specific project** (considerations / choices / designs)
+   - [X] Identify the **implications most relevant** to your project
+   - [X] Explain **what the implications mean** and **why each is relevant** to your project
+   - [X] Explain **how each implication will impact your specific project** (considerations / choices / designs)
 
 *Note: You must satisfy **all** of the criteria above to pass*
 
@@ -88,26 +88,26 @@ Use advanced techniques to develop a refined database means **all of the criteri
 Use advanced techniques to develop a digital media outcome means that, taking into account the problem / need and the end users:
 
 1. You must first define the purpose of your system and the end-users' needs:
-   - [ ] Define the **purpose of the system** that uses the database
-   - [ ] Describe the **needs of the end-users**
-   - [ ] Define the **key functionality** of the proposed system
+   - [X] Define the **purpose of the system** that uses the database
+   - [X] Describe the **needs of the end-users**
+   - [X] Define the **key functionality** of the proposed system
 
 2. You must use appropriate advanced tools and techniques, for example:
-   - [ ] You have used **non-core functionality** of tools / libraries (i.e. you have extended these beyond their supplied defaults)
-   - [ ] You have applied **industry standards or guidelines** (e.g. PEP 8 style guide for Python)
-   - [ ] Your UI uses a **responsive design** for use on multiple devices
-   - [ ] You have **integrated original media assets** into your work, as needed
-   - [ ] You **handle data dynamically**, making your system interactive
-   - [ ] You have **automated aspects of your system** through scripts (e.g. Python)
+   - [X] You have used **non-core functionality** of tools / libraries (i.e. you have extended these beyond their supplied defaults)
+   - [X] You have applied **industry standards or guidelines** (e.g. PEP 8 style guide for Python)
+   - [X] Your UI uses a **responsive design** for use on multiple devices
+   - [X] You have **integrated original media assets** into your work, as needed
+   - [X] You **handle data dynamically**, making your system interactive
+   - [X] You have **automated aspects of your system** through scripts (e.g. Python)
 
 3. You must apply appropriate data integrity and testing procedures:
-   - [ ] All webpage text should be checked for **accuracy** (e.g. spell-checked)
-   - [ ] Any **data shown is as expected** (i.e. matches database / calculated values)
+   - [X] All webpage text should be checked for **accuracy** (e.g. spell-checked)
+   - [X] Any **data shown is as expected** (i.e. matches database / calculated values)
 
 4. You need to explain and address relevant implications:
-   - [ ] Identify the **implications most relevant** to your project
-   - [ ] Explain **what the implications mean** and **why each is relevant** to your project
-   - [ ] Explain **how each implication will impact your specific project** (considerations / choices / designs)
+   - [X] Identify the **implications most relevant** to your project
+   - [X] Explain **what the implications mean** and **why each is relevant** to your project
+   - [X] Explain **how each implication will impact your specific project** (considerations / choices / designs)
 
 
 *Note: You must satisfy **all** of the criteria above to pass*

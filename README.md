@@ -4,16 +4,23 @@ by Robbie Kinloch
 
 ## Project Description
 
-This is an app that ...
+This is an app that contains a list of household tasks that need doing to remind my end users of chores that may have been forgotten. The user can create a task that needs doing to insert it into the list, then be able to check details or delete that specific task.
 
 The app has the following key features:
-- Feature one
-- Feature two
-- Feature three
-- ...
+- Observing all tasks in a list
+- Adding a task
+- Checking the details of a task
+- Deleting a task
 
+
+
+## Live Site
+
+- [Live Site](https://level-2-project-house-todo.onrender.com/)
 
 ## Supporting Documents
+
+[GH pages site](https://level-2-project-house-todo/)
 
 Task Instructions:
 - [Instruction documents](docs/instructions/)
@@ -38,7 +45,7 @@ Test User 2:
 - Username: xxxxx
 - Password: xxxxx
 
-...
+No test accounts were needed for my project.
 
 
 ## Technologies Used
